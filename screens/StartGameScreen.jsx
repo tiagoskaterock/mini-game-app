@@ -5,8 +5,11 @@ function StartGameScreen() {
     return (
         <View style={styles.inputContainer}>
             <TextInput 
+                keyboardType='number-pad'
+                autoCapitalize='none'
                 style={styles.numberInput} 
                 maxLength={2}
+                autoCorrect={false}
             />
             <PrimaryButton>Reset</PrimaryButton>
             <PrimaryButton>Confirm</PrimaryButton>
